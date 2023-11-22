@@ -13,7 +13,7 @@ COPY . /app
 RUN npm run build --prod 
 
 #segundo paso
-
+#a
 FROM debian:11
 
 COPY --from=build-step /app/dist/proyecto-final-frontend/ /var/www/html
